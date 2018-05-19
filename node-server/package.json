@@ -11,6 +11,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "http": "0.0.0",
+    "nodeman": "^1.1.2",
     "nodemon": "^1.17.4",
     "save": "^2.3.2"
   }
