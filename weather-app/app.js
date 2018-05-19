@@ -1,6 +1,6 @@
 const yargs = require('yargs');
 const geocode = require('./geocode/geocode');
-
+const axios = require('axios');
 const argv = yargs
     .options({
         a: {
@@ -21,3 +21,7 @@ geocode.geocodeAddress(argv.address, (errorMessage, result) => {
     console.log(JSON.stringify(result, undefined, 2));
    }
 });
+
+url: 'https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}'
+
+axios.get()
